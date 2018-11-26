@@ -1,0 +1,15 @@
+#!/bin/bash
+
+read name 
+read eng
+read hin
+read math
+if [ "$eng" > "100" ]; then
+     echo "One or more numbers are more than 100"
+elif [ "$hin" > "100" ]; then
+     echo "One or more numbers are more than 100"
+elif [ "$math" > "100" ]; then
+     echo "One or more numbers are more than 100"
+else 
+    echo  $name $eng $hin $math >> /home/cp/stud.csv
+fi
